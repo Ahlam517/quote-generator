@@ -94,18 +94,16 @@ var generatorBtn = document.getElementById("generator");
 quoteHolder.innerHTML = quotes[0].quote;
 authorHolder.innerHTML = quotes[0].author;
 
-
-var currentIndex =0;
-function generateCode(){
+var currentIndex = 0;
+function generateCode() {
   var rondom;
   console.log(currentIndex);
   do {
-    rondom=Math.floor(Math.random() * quotes.length);
-  }
-  while(currentIndex === rondom);
+    rondom = Math.floor(Math.random() * quotes.length);
+  } while (currentIndex === rondom);
   currentIndex = rondom;
 
   console.log(rondom);
-  quoteHolder.innerHTML =quotes[rondom].quote;
+  quoteHolder.innerHTML = quotes[rondom].quote;
   authorHolder.innerHTML = quotes[rondom].author;
 }
