@@ -103,7 +103,7 @@ function generateCode() {
   } while (currentIndex === rondom);
   currentIndex = rondom;
 
-  console.log(rondom);
+  console.log(currentIndex);
   quoteHolder.innerHTML = quotes[rondom].quote;
   authorHolder.innerHTML = quotes[rondom].author;
 }
